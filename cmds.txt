@@ -1,0 +1,17 @@
+# Start the database PostgreSQL
+docker compose up -d
+
+# Start the Express development server
+npm run dev
+
+# Stop/remove the Compose containers
+docker compose down
+
+# See whether it's running
+docker compose ps
+
+# View PostgreSQL logs
+docker compose logs db
+
+# Start again
+docker compose up -d
